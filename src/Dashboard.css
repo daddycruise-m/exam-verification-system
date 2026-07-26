@@ -1,0 +1,78 @@
+:root {
+  --card: #ffffff;
+  --bg: #eef3ff;
+  --text: #10233c;
+  --muted: #54607c;
+  --blue: #1f71c1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-shell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef3ff 0%, #f8fbff 50%, #fff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 16px;
+}
+
+.dashboard-card {
+  width: min(540px, 100%);
+  background: var(--card);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 28px 70px rgba(16, 35, 60, 0.12);
+}
+
+.dashboard-card h1 {
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+.dashboard-card p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.dashboard-info {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.dashboard-info div {
+  display: flex;
+  justify-content: space-between;
+  background: #f7faff;
+  border: 1px solid rgba(16, 35, 60, 0.08);
+  padding: 16px 18px;
+  border-radius: 16px;
+}
+
+.dashboard-info span {
+  color: var(--muted);
+}
+
+.dashboard-info strong {
+  color: var(--text);
+}
+
+.logout-button {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  background: var(--blue);
+  color: #fff;
+  padding: 14px 0;
+  font-weight: 700;
+  cursor: pointer;
+}
