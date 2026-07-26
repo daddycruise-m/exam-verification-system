@@ -28,6 +28,8 @@ export default function LoginPage() {
         <div className="brand-text">
           <div className="school-name-top">NATIONBUILDERS</div>
           <div className="school-name-bottom">POLYTECHNIC (NABPOLY)</div>
+          <div className="page-title">Exam Verification System</div>
+        
         </div>
       </div>
 

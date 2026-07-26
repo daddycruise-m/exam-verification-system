@@ -20,7 +20,8 @@ export default function AppRoutes() {
       <Route path="/" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-      <Route path="/student" element={<ProtectedRoute element={StudentPage} allowedRoles={[ 'student' ]} />} />
+      <Route path="/dashboard" element={<ProtectedRoute element={StudentPage} allowedRoles={[ 'student' ]} />} />
+      <Route path="/student" element={<Navigate to="/dashboard" replace />} />
       <Route path="/admin" element={<ProtectedRoute element={AdminPage} allowedRoles={[ 'admin' ]} />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
